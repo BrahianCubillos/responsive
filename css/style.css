@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header, nav, section, article, aside, footer{
+	display: block;
+}
+
+body{
+	text-align: center;
+	background: lightgray;
+}
+
+
+#contenedor{
+	width: 960px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.cabezera{
+	display: flex;
+	justify-content: space-between;
+	background: #1C3643;
+	height: 39px;
+	padding: 0 20px;
+	border: 1px solid black;
+}
+
+.header{
+	position: relative;
+	height: 400px;
+	background-image: url('../images/paisaje.jpg');
+	background-size: cover;
+}
+
+.logo{
+	padding: 0;
+}
+
+.menu li{
+	display: inline-block;
+	padding: 10px 10px;
+	cursor: pointer;
+	color: white;
+}
+
+.menu li:hover{
+	background-color: #256178;
+}
+
+.menu li:active{
+	background-color: #0c1b25;
+}
+
+/*.menu li a{
+	text-decoration: none;
+	color: white;
+}*/
+
+h1{
+	position: absolute; /*Este busca un elemento relativo por eso pusimos su padre .header como relativo asi se ubica abajo*/
+	bottom: 0;
+	margin: 0 0 20px 20px;
+	padding: 20px;
+	background: hsla(220, 20%, 20%, 0.5);
+}
+
+.cuerpo{
+	display: flex;
+	justify-content: space-between;
+}
+
+.seccion{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 15px;
+	width: 660px;
+}
+
+.seccion img{
+	height: 200px;
+	width: 300px;
+}
+
+.seccion figure{
+	width: 300px;
+	font: bold 15px verdana, sans-serif;
+	color: #5c6368;
+}
+
+hr{
+	margin: 10px 0;
+	color: lightgray;
+}
+
+.barra_lateral{
+	background-image: url('../images/larga.jpg');
+	background-size: cover;
+	width: 220px;
+	margin: 15px 0 15px 20px;
+}
+
+.pie{
+	height: 200px;
+	background: #2598ea;
+	text-align: center;	
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.pie li, span{
+	padding: 15px;
+	margin: 75px 5px;
+}
+
+.pie li{
+	background: #458aba;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.pie li a{
+	text-decoration: none;
+	color: white;
+}
+
+.pie li:nth-child(1){
+	background: #2598ea;
+}
+
+.pie li:hover{
+	background-color: #294c65;
+}
+
+.pie li:active{
+	background-color: #0c1b25;
+}
+
